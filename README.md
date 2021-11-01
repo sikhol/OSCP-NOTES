@@ -100,6 +100,15 @@ service_exec(conn, r'cmd /c net localgroup administrators bill /add')
 > - https://root4loot.com/post/eternalblue_manual_exploit/
 > - https://www.cybersecpadawan.com/2020/05/tryhackme-blue-eternalblue-exploitation.html
 
+## BOF 
+> - https://www.noobsec.net/bof/
+> - https://ricobandy.github.io/vulnhub/Brainpan-Vulnhub/
+> - https://offs3cg33k.medium.com/brainpan-vulnhub-walkthrough-143f1b3786c5
+> - https://tcm-sec.com/buffer-overflows-made-easy/
+
+## MULTIPLE WAY TO EXPLOIT TOMCAT MANAGER
+> - https://www.hackingarticles.in/multiple-ways-to-exploit-tomcat-manager/
+
 
 
 
