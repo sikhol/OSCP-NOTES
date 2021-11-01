@@ -1,4 +1,11 @@
 # OSCP-NOTES
+## Reverse Shell
+> - https://medium.com/@nmappn/exploiting-smb-samba-without-metasploit-series-1-b34291bbfd63
+> - https://github.com/swisskyrepo/PayloadsAllTheThings/blob/master/Methodology%20and%20Resources/Reverse%20Shell%20Cheatsheet.md
+> - https://blog.certcube.com/detailed-cheatsheet-lfi-rce-websheels/
+> - https://sushant747.gitbooks.io/total-oscp-guide/content/reverse-shell.html
+> - https://pentestmonkey.net/cheat-sheet/shells/reverse-shell-cheat-sheet
+> - https://blog.adithyanak.com/oscp-preparation-guide/windows-reverse-shells
 
 ## Samba 
 ### Exploit samba without metasploit
