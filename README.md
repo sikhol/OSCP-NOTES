@@ -1,5 +1,29 @@
 # OSCP-NOTES
 
+## Samba 
+### Exploit samba without metasploit
+> - https://medium.com/@nmappn/exploiting-smb-samba-without-metasploit-series-1-b34291bbfd63
+> - https://redteamzone.com/EternalRed/
+> - https://www.hackingtutorials.org/scanning-tutorials/scanning-for-smb-vulnerabilities-using-nmap/
+> - https://www.hackingarticles.in/a-little-guide-to-smb-enumeration/
+### Fix samba version
+> - https://unix.stackexchange.com/questions/450986/linux-to-windows-can-list-smb-shares-but-cannot-connect 
+
+## SQL Injection
+### Mysql :
+> - http://lastc0de.blogspot.com/2013/07/tutorial-sql-injection-manual.html
+> - https://exploit.linuxsec.org/tutorial-sql-injection-manual/
+### Oracle 
+> - http://www.securityidiots.com/Web-Pentest/SQL-Injection/Union-based-Oracle-Injection.html
+### MSSQL
+> - https://www.exploit-db.com/docs/english/44348-error-based-sql-injection-in-order-by-clause-(mssql).pdf
+> - https://perspectiverisk.com/mssql-practical-injection-cheat-sheet/
+> - https://bhanusnotes.blogspot.com/2019/09/sql-injection-cheat-sheet.html
+## MSFVENOM cheat Sheet
+> - https://book.hacktricks.xyz/shells/shells/msfvenom 
+> - https://notchxor.github.io/oscp-notes/8-cheatsheets/msfvenom/
+> - https://sushant747.gitbooks.io/total-oscp-guide/content/reverse-shell.html
+
 ## File transfer cheat sheet
 > - https://ironhackers.es/en/cheatsheet/transferir-archivos-post-explotacion-cheatsheet/
 > - https://medium.com/@PenTest_duck/almost-all-the-ways-to-file-transfer-1bd6bf710d65
