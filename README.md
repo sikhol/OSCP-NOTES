@@ -10,8 +10,7 @@
 ### Gobuster 
 > - gobuster dir -u http://10.10.10.56/cgi-bin -x sh,pl -w /usr/share/wordlists/dirb/common.txt
 > - gobuster dir -u http://10.10.10.56:80/ -w /usr/share/seclists/Discovery/Web-Content/common.txt -e -k -l -s "200,204,301,302,307,401,403" -x "txt,html,php,asp,aspx,jsp"
-> - https://bhanusnotes.blogspot.com/2019/09/sql-injection-cheat-sheet.html
-> 
+
 ## Samba 
 ### Exploit samba without metasploit
 > - https://medium.com/@nmappn/exploiting-smb-samba-without-metasploit-series-1-b34291bbfd63
