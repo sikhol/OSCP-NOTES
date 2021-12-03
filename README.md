@@ -6,7 +6,10 @@
 > - https://sushant747.gitbooks.io/total-oscp-guide/content/reverse-shell.html
 > - https://pentestmonkey.net/cheat-sheet/shells/reverse-shell-cheat-sheet
 > - https://blog.adithyanak.com/oscp-preparation-guide/windows-reverse-shells
-> 
+
+### Shellshock
+> - nmap -p80 -sV --script http-shellshock --script-args "uri=/cgi-bin/user.sh" 10.10.10.56
+
 ### Gobuster 
 > - gobuster dir -u http://10.10.10.56/cgi-bin -x sh,pl -w /usr/share/wordlists/dirb/common.txt
 > - gobuster dir -u http://10.10.10.56:80/ -w /usr/share/seclists/Discovery/Web-Content/common.txt -e -k -l -s "200,204,301,302,307,401,403" -x "txt,html,php,asp,aspx,jsp"
