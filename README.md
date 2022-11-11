@@ -128,6 +128,7 @@ service_exec(conn, r'cmd /c net localgroup administrators bill /add')
 ## active Directory
 > - git clone https://github.com/Sq00ky/attacktive-directory-tools.git
 > https://medium.com/@daniela.mh20/attacktive-directory-thm-walkthrough-9a7f0c7cc925 
+> https://shakuganz.com/2022/01/12/tryhackme-attacktive-directory-write-up/
 > #executable kerbrute
  
 $ chmod u=rwx kerbrute 
