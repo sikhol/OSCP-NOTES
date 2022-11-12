@@ -129,6 +129,10 @@ service_exec(conn, r'cmd /c net localgroup administrators bill /add')
 > - git clone https://github.com/Sq00ky/attacktive-directory-tools.git
 > https://medium.com/@daniela.mh20/attacktive-directory-thm-walkthrough-9a7f0c7cc925 
 > https://shakuganz.com/2022/01/12/tryhackme-attacktive-directory-write-up/
+> https://infosecwriteups.com/active-hack-the-box-ctf-writeup-55682a1272c2
+> https://rana-khalil.gitbook.io/hack-the-box-oscp-preparation/windows-boxes/forest-writeup-w-o-metasploit
+> https://resources.infosecinstitute.com/topic/hack-the-box-htb-machines-walkthrough-series-sauna/
+> 
 
 
 > dont forget enumeration ldap
